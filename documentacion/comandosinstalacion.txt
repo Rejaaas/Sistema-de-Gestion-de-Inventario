@@ -7,4 +7,8 @@ npm install bcrypt
 npm install dotenv
 
 encender servidor
+<<<<<<< HEAD
 node laAPI.js
+=======
+node laAPI.js
+>>>>>>> 4bf01252412402fad9c73b7181656dcdf4fd4f58

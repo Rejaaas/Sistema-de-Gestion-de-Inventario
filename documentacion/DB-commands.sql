@@ -44,10 +44,18 @@ CREATE TABLE productos (
     FOREIGN KEY (categoria_id) REFERENCES categorias (id)
 );
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 4bf01252412402fad9c73b7181656dcdf4fd4f58
 --crear usuario seguro para que lo use la api
 
 CREATE USER 'api_ecommerce'@'localhost' IDENTIFIED BY '1234';
 
+<<<<<<< HEAD
 GRANT
 SELECT,
 INSERT
@@ -65,3 +73,18 @@ DELETE ON ecommerce.productos TO 'api_ecommerce'@'localhost';
 FLUSH PRIVILEGES;
 
 SHOW GRANTS FOR 'api_ecommerce'@'localhost';
+=======
+
+GRANT SELECT, INSERT ON ecommerce.users TO 'api_ecommerce'@'localhost';
+
+
+GRANT SELECT ON ecommerce.categorias TO 'api_ecommerce'@'localhost';
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON ecommerce.productos TO 'api_ecommerce'@'localhost';
+
+
+FLUSH PRIVILEGES;
+
+
+SHOW GRANTS FOR 'api_ecommerce'@'localhost';
+>>>>>>> 4bf01252412402fad9c73b7181656dcdf4fd4f58
