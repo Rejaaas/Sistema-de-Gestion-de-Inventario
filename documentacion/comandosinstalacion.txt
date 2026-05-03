@@ -1,5 +1,10 @@
+COMANDOS 
+dependencias
 
-
-
-
+npm install Express
+npm install Mysql
+npm install bcrypt
 npm install dotenv
+
+encender servidor
+node laAPI.js

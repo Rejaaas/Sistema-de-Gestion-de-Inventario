@@ -1,14 +1,13 @@
--- Crear la base de datos
+-- crear base de datos
 CREATE DATABASE ecommerce;
 
---Crear el usuario
+-- crear usuario
 CREATE USER 'DBadmin'@'localhost' IDENTIFIED BY '1234';
 --Dar permisos SOLO sobre esa base de datos
 GRANT ALL PRIVILEGES ON ecommerce.* TO 'DBadmin'@'localhost';
 --Aplicar cambios
 FLUSH PRIVILEGES;
 
---comprobar
 SHOW GRANTS FOR 'DBadmin'@'localhost';
 
 -- DESDE DB ADMIN
@@ -44,3 +43,25 @@ CREATE TABLE productos (
     categoria_id INT,
     FOREIGN KEY (categoria_id) REFERENCES categorias (id)
 );
+
+--crear usuario seguro para que lo use la api
+
+CREATE USER 'api_ecommerce'@'localhost' IDENTIFIED BY '1234';
+
+GRANT
+SELECT,
+INSERT
+    ON ecommerce.users TO 'api_ecommerce'@'localhost';
+
+GRANT SELECT ON ecommerce.categorias TO 'api_ecommerce'@'localhost';
+
+GRANT
+SELECT,
+INSERT
+,
+UPDATE,
+DELETE ON ecommerce.productos TO 'api_ecommerce'@'localhost';
+
+FLUSH PRIVILEGES;
+
+SHOW GRANTS FOR 'api_ecommerce'@'localhost';
