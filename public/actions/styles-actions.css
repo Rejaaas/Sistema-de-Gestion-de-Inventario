@@ -1,0 +1,90 @@
+/* =========================================
+   styles-actions.css
+   Estilos específicos para las vistas CRUD
+========================================= */
+
+/* Modificadores para contenedores anchos (como las tablas) */
+.wide-container {
+    width: 90% !important;
+    max-width: 800px !important;
+}
+
+/* Tablas de datos */
+.data-table {
+    width: 100%;
+    color: white;
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-header-row {
+    border-bottom: 2px solid #ff7300;
+}
+
+.table-cell {
+    padding: 10px;
+}
+
+.table-empty-cell {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+.table-loading-cell {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Formularios de búsqueda y flexbox */
+.search-form {
+    margin-bottom: 20px;
+}
+
+.flex-group {
+    display: flex;
+    gap: 10px;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.btn-search {
+    margin-top: 0 !important;
+    width: auto !important;
+    padding: 0 20px !important;
+}
+
+/* Elementos de formulario específicos */
+.custom-select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #0d0d0d;
+    color: #fff;
+    border: 1px solid #222;
+}
+
+.highlight-input {
+    border: 1px solid #ff7300 !important;
+}
+
+.custom-hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 15px 0;
+}
+
+/* Botones de peligro y textos separadores */
+.btn-danger {
+    background-color: #dc3545 !important;
+}
+
+.or-divider {
+    text-align: center;
+    color: #888;
+    margin: 10px 0;
+}

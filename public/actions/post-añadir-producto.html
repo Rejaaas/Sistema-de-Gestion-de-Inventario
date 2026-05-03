@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Producto</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="styles-actions.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Añadir Producto</h2>
+
+        <form id="addProductoForm">
+            <input type="text" id="prodNombre" placeholder="Nombre (ej. Pala Siux)" required>
+            <input type="number" id="prodPrecio" placeholder="Precio (€)" step="0.01" required>
+            <input type="number" id="prodStock" placeholder="Stock disponible" required>
+
+            <select id="prodCategoria" class="custom-select" required>
+                <option value="" disabled selected>Selecciona una categoría...</option>
+                <option value="1">Palas</option>
+                <option value="2">Bolas</option>
+                <option value="3">Paleteros</option>
+                <option value="4">Ropa</option>
+            </select>
+
+            <button type="submit">Guardar producto</button>
+        </form>
+
+        <div id="mensajeProducto"></div>
+        <br>
+        <button type="button" onclick="window.location.href='../panel.html'">Volver al Panel</button>
+    </div>
+</body>
+
+</html>

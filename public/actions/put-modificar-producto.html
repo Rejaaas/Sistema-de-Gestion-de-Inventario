@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Producto</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="styles-actions.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Actualizar Producto</h2>
+        <p class="menu-label">Introduce el ID y SOLO los nuevos datos que quieras cambiar</p>
+
+        <form id="updateProductoForm">
+            <input type="number" id="updId" placeholder="ID del producto a modificar (ej. 1)" required
+                class="highlight-input">
+
+            <hr class="custom-hr">
+
+            <input type="text" id="updNombre" placeholder="Nuevo Nombre">
+            <input type="number" id="updPrecio" placeholder="Nuevo Precio (€)" step="0.01">
+            <input type="number" id="updStock" placeholder="Nuevo Stock">
+
+            <select id="updCategoria" class="custom-select">
+                <option value="" disabled selected>Nueva categoría...</option>
+                <option value="1">Palas</option>
+                <option value="2">Bolas</option>
+                <option value="3">Paleteros</option>
+                <option value="4">Ropa</option>
+            </select>
+
+            <button type="submit">Guardar cambios</button>
+        </form>
+
+        <div id="mensajeUpdate"></div>
+        <br>
+        <button type="button" onclick="window.location.href='../panel.html'">Volver al Panel</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="styles-actions.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <div class="login-container wide-container">
+        <h2>Lista de Productos</h2>
+
+        <table class="data-table">
+            <thead>
+                <tr class="table-header-row">
+                    <th class="table-cell">ID</th>
+                    <th class="table-cell">Nombre</th>
+                    <th class="table-cell">Precio</th>
+                    <th class="table-cell">Categoría</th>
+                    <th class="table-cell">Stock</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaProductos">
+                <tr>
+                    <td colspan="5" class="table-loading-cell">Cargando productos...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" onclick="window.location.href='../panel.html'">Volver al Panel</button>
+    </div>
+</body>
+
+</html>

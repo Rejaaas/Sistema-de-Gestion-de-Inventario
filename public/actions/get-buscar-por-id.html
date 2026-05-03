@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Producto Por ID</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="styles-actions.css">
+    <script defer src="../script.js"></script>
+</head>
+
+<body>
+    <div class="login-container wide-container">
+        <h2>Buscar Producto por ID</h2>
+
+        <form id="buscarProductoForm" class="search-form">
+            <div class="flex-group">
+                <input type="number" id="buscarId" placeholder="Introduce el ID (ej. 1)" required
+                    class="no-margin-bottom">
+                <button type="submit" class="btn-search">Buscar</button>
+            </div>
+        </form>
+
+        <table class="data-table">
+            <thead>
+                <tr class="table-header-row">
+                    <th class="table-cell">ID</th>
+                    <th class="table-cell">Nombre</th>
+                    <th class="table-cell">Precio</th>
+                    <th class="table-cell">Categoría</th>
+                    <th class="table-cell">Stock</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaProducto">
+                <tr>
+                    <td colspan="5" class="table-empty-cell">Introduce un ID y pulsa buscar...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" onclick="window.location.href='../panel.html'">Volver al Panel</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario - Padel Rejas</title>
+    <link rel="stylesheet" href="css/login-register-panel.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Crear Usuario</h2>
+        <form id="createUserForm">
+            <input type="text" id="newusername" placeholder="Introduce un nombre de usuario" required>
+            <input type="password" id="newpassword" placeholder="Introduce una contraseña" required>
+            <button type="submit">Crear Usuario</button>
+        </form>
+        <div id="mensaje"></div>
+        <br>
+        <button type="button" onclick="window.location.href='index.html'" style="background-color: #333;">Volver al
+            Login</button>
+    </div>
+</body>
+
+</html>
