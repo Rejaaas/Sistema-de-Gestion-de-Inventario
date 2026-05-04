@@ -20,6 +20,8 @@
 
 
 ## Estructura del proyecto
+
+```text
 API-Padel/
  ┣ documentacion/
  ┣ public/
@@ -39,7 +41,6 @@ API-Padel/
  ┣ .gitignore
  ┣ laAPI.js
  ┗ package.json
-
 
 ## Futuras mejoras
 
