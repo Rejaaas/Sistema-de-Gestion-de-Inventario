@@ -18,6 +18,13 @@
 * **Frontend:** HTML5, CSS3, JavaScript
 * **Seguridad:** bcrypt, dotenv
 
+## Futuras mejoras
+
+- tokens para mantener  sesión iniciada 
+- añadir imagen por producto
+- implementar el patrón MVC (Modelo-Vista-Controlador) routes controlers models
+- migrar a servidor 
+
 
 ## Estructura del proyecto
 
@@ -42,19 +49,3 @@ API-Padel/
  ┣ laAPI.js
  ┗ package.json
 
-## Futuras mejoras
-
-- tokens para mantener  sesión iniciada 
-- añadir imagen por producto
-- implementar el patrón MVC (Modelo-Vista-Controlador) routes controlers models
-- migrar a servidor
-
-
-
-
-## Futuras mejoras
-
-- tokens para mantener  sesión iniciada 
-- añadir imagen por producto
-- implementar el patrón MVC (Modelo-Vista-Controlador) routes controlers models
-- migrar a servidor 
