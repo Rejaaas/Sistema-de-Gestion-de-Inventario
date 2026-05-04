@@ -47,4 +47,14 @@ API-Padel/
 - tokens para mantener  sesión iniciada 
 - añadir imagen por producto
 - implementar el patrón MVC (Modelo-Vista-Controlador) routes controlers models
+- migrar a servidor
+
+
+
+
+## Futuras mejoras
+
+- tokens para mantener  sesión iniciada 
+- añadir imagen por producto
+- implementar el patrón MVC (Modelo-Vista-Controlador) routes controlers models
 - migrar a servidor 
